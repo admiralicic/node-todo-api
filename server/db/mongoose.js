@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://dbuser:dbuser1@ds123258.mlab.com:23258/admiralicic-todoapp', {useNewUrlParser: true})
+mongoose.connect(process.env.MONGODB_URI, {useNewUrlParser: true})
 .then(() => {
     console.log('Connected to mongodb!');
 })
